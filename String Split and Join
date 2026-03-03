@@ -1,0 +1,9 @@
+def split_and_join(line):
+    r1=line.split()
+    r2="-".join(r1)
+    return r2
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
