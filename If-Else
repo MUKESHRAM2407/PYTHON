@@ -1,0 +1,9 @@
+n=int(input())
+if(n%2!=0):
+    print("Weird")
+elif(2<=n and 5>=n):
+    print("Not Weird")
+elif(6<=n and 20>=n):
+    print("Weird")
+else:
+    print("Not Weird")    
