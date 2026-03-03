@@ -1,0 +1,21 @@
+N = int(input())
+students = []
+for _ in range(N):
+    name = input()
+    grade = float(input()) # Grades are often floats
+    students.append([name, grade])
+
+students.sort(key=lambda x: (x[1], x[0]))
+unique_grades = sorted(list(set([s[1] for s in students])))
+
+if len(unique_grades) >= 2:
+    second_lowest_grade = unique_grades[1]
+    
+    second_lowest_students = []
+    for student in students:
+        if student[1] == second_lowest_grade:
+            second_lowest_students.append(student[0])
+    for name in sorted(second_lowest_students):
+        print(name)
+else:
+    pass
