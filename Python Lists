@@ -1,0 +1,45 @@
+if __name__ == '__main__':
+    my_list = []
+    try:
+        N = int(input())
+    except ValueError:
+        print("Invalid input for the number of commands.")
+        exit()
+    for _ in range(N):
+        command_parts = input().split()
+        command_name = command_parts[0]
+
+        if command_name == "insert":
+            if len(command_parts) == 3:
+                try:
+                    i = int(command_parts[1])
+                    e = int(command_parts[2])
+                    my_list.insert(i, e)
+                except ValueError:
+                    print("Invalid arguments for insert command.")
+        elif command_name == "print":
+            print(my_list)
+        elif command_name == "remove":
+            if len(command_parts) == 2:
+                try:
+                    e = int(command_parts[1])
+                    if e in my_list:
+                        my_list.remove(e)
+                except ValueError:
+                    print("Invalid argument for remove command.")
+        elif command_name == "append":
+            if len(command_parts) == 2:
+                try:
+                    e = int(command_parts[1])
+                    my_list.append(e)
+                except ValueError:
+                    print("Invalid argument for append command.")
+        elif command_name == "sort":
+            my_list.sort()
+        elif command_name == "pop":
+            if my_list:
+                my_list.pop()
+        elif command_name == "reverse":
+            my_list.reverse()
+        else:
+            print(f"Unknown command: {command_name}")
