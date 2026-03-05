@@ -1,0 +1,35 @@
+row=int(input("Enter the row"))
+column=int(input("Enter the column"))
+matrix1=[]
+for i in range(row):
+    row=[]
+    for j in range(column):
+        row.append(int(input()))
+    matrix1.append(row)
+for i in range(len(row)):
+    for j in range(column):
+        print(matrix1[i][j],end=" ")
+    print()
+
+#second matrix
+row=int(input("Enter the row"))
+column=int(input("Enter the column"))
+matrix2=[]
+for i in range(row):
+    row=[]
+    for j in range(column):
+        row.append(int(input()))
+    matrix2.append(row)
+for i in range(len(row)):
+    for j in range(column):
+        print(matrix2[i][j],end=" ")
+    print()
+
+result=[[0,0],[0,0]]
+for i in range(len(matrix1)):
+    for j in range(len(matrix2[0])):
+        for k in range(len(matrix2)):
+            result[i][j]+=matrix1[i][k]*matrix2[k][j]
+
+for row in result:
+    print(row)
