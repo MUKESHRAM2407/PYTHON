@@ -1,0 +1,17 @@
+'''my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+print(my_class.keys())
+print(my_class.values())'''
+
+'''#Accessing the elements in the dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+print(my_class[1])
+print(my_class)'''
+
+'''#Traversing a dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+for i in my_class:
+    print(i)
+    print(my_class[i])'''
+
+
+
