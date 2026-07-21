@@ -1,0 +1,9 @@
+#merging two dictionary
+n=int(input("Enter the no of entries:"))
+dict1=dict2={}
+dict1={int(input("Roll no:")):input("Name")for i in range(n)}
+print("The first dict:",dict1)
+dict2={int(input("Roll no:")):input("Name")for i in range(n)}
+print("The second dict :",dict2)
+dict1.update(dict2)
+print(dict1)
