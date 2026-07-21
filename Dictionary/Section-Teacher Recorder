@@ -1,0 +1,5 @@
+#python program to input total number of section and teachers name in 11th class and display all information in screen
+n=int(input("Enter the no of entries"))
+dict1={input("section"):input("name") for i in range(n)}
+print(dict1)
+
