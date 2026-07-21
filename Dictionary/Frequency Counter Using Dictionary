@@ -1,0 +1,14 @@
+#count the frequency in tuple or list and store in dictionary
+n=int(input("Enter the no of entries:"))
+lista=[]
+for i in range(n):
+    temp=int(input("Enter the elements"))
+    lista.append(temp)
+print("The list is:",lista)
+d={}
+for i in lista:
+    if i in d:
+        d[i]=d[i]+1
+    else:
+        d[i]=1
+print(d)
