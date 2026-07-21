@@ -1,0 +1,5 @@
+#get the country name as input and print its capital
+a={'india':'new delhi','japan':'tokyo','england':'london'}
+cn=input("Enter the country name:")
+b=a.get(cn)
+print(b)
