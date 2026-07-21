@@ -1,0 +1,19 @@
+ #Adding elements to the dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+my_class[4]='deeran'
+print(my_class)
+
+#updateing or modifying the elements in the dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+my_class[1]='deeran'
+print(my_class)
+
+'''#deleting item from dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+a=del my_class[1]
+print(a)'''
+
+#checking existing key in the dictionary
+my_class={1:'Adi',2:'sanjay',3:'bhadmesh'}
+print(2 in my_class)
+print(5 not in my_class)
