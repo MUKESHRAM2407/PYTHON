@@ -1,0 +1,4 @@
+#Database of name and phone no in dictionary
+n=int(input("Enter the no of entries:"))
+dictionary={input("Enter the name"):int(input("Phone no:")) for i in range(n)}
+print(dictionary)
